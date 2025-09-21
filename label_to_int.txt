@@ -1,0 +1,67 @@
+ Access of Resource Using Incompatible Type ('Type Confusion'):0
+ Authentication Bypass by Capture-replay:1
+ Authentication Bypass by Spoofing:2
+ Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'):3
+ Cleartext Storage of Sensitive Information:4
+ Cleartext Transmission of Sensitive Information:5
+ Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition'):6
+ Cross-Site Request Forgery (CSRF):7
+ Deserialization of Untrusted Data:8
+ Double Free:9
+ Download of Code Without Integrity Check:10
+ Exposure of Resource to Wrong Sphere:11
+ Improper Authentication:12
+ Improper Certificate Validation:13
+ Improper Check for Unusual or Exceptional Conditions:14
+ Improper Handling of Exceptional Conditions:15
+ Improper Initialization:16
+ Improper Input Validation:17
+ Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'):18
+ Improper Link Resolution Before File Access ('Link Following'):19
+ Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'):20
+ Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'):21
+ Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'):22
+ Improper Privilege Management:23
+ Improper Restriction of Operations within the Bounds of a Memory Buffer:24
+ Improper Restriction of Recursive Entity References in DTDs ('XML Entity Expansion'):25
+ Improper Restriction of XML External Entity Reference:26
+ Improper Validation of Array Index:27
+ Improper Validation of Integrity Check Value:28
+ Inclusion of Sensitive Information in Log Files:29
+ Incorrect Authorization:30
+ Incorrect Default Permissions:31
+ Incorrect Permission Assignment for Critical Resource:32
+ Incorrect Type Conversion or Cast:33
+ Information Exposure:34
+ Insecure Default Initialization of Resource:35
+ Insufficient Session Expiration:36
+ Insufficient Verification of Data Authenticity:37
+ Insufficiently Protected Credentials:38
+ Integer Overflow or Wraparound:39
+ Loop with Unreachable Exit Condition ('Infinite Loop'):40
+ Missing Authentication for Critical Function:41
+ Missing Authorization:42
+ Missing Encryption of Sensitive Data:43
+ Missing Release of Resource after Effective Lifetime:44
+ NULL Pointer Dereference:45
+ Neutralization of Special Elements in Output Used by a Downstream Component ('Injection'):46
+ Out-of-bounds Read:47
+ Out-of-bounds Write:48
+ Permissions Privileges and Access Controls:49
+ Reachable Assertion:50
+ Resource Management Errors:51
+ Server-Side Request Forgery (SSRF):52
+ Session Fixation:53
+ URL Redirection to Untrusted Site ('Open Redirect'):54
+ Uncontrolled Recursion:55
+ Uncontrolled Resource Consumption:56
+ Unrestricted Upload of File with Dangerous Type:57
+ Untrusted Search Path:58
+ Use After Free:59
+ Use of Externally-Controlled Format String:60
+ Use of Hard-coded Credentials:61
+ Use of Password Hash With Insufficient Computational Effort:62
+ Use of Uninitialized Resource:63
+ Use of a Broken or Risky Cryptographic Algorithm:64
+ Weak Password Requirements:65
+ XML Injection (aka Blind XPath Injection):66

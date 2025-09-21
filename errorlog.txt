@@ -1,0 +1,478 @@
+2025-09-21 15:47:45.415673: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:__main__:GPU configured: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+25/09/21 15:47:49 WARN Utils: Your hostname, ryzen, resolves to a loopback address: 127.0.1.1; using 10.105.124.77 instead (on interface wlan0)
+25/09/21 15:47:49 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/09/21 15:47:49 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:=====>                                                    (1 + 9) / 10]                                                                                INFO:__main__:Renamed '_c0' to 'cve_id' in cve.csv
+25/09/21 15:47:55 WARN CSVHeaderChecker: CSV header does not conform to the schema.
+ Header: , cwe_name, summary
+ Schema: _c0, cwe_name, summary
+Expected: _c0 but found: 
+CSV file: file:///home/laracroft/projects/python_projects/tensorflow_test/test/dataset/cve.csv
+[Stage 11:>                                                       (0 + 10) / 10][15.030s][warning][gc,alloc] Executor task launch worker for task 2.0 in stage 11.0 (TID 24): Retried waiting for GCLocker too often allocating 19713 words
+[15.031s][warning][gc,alloc] Executor task launch worker for task 7.0 in stage 11.0 (TID 29): Retried waiting for GCLocker too often allocating 16574 words
+[15.031s][warning][gc,alloc] Executor task launch worker for task 3.0 in stage 11.0 (TID 25): Retried waiting for GCLocker too often allocating 7862 words
+[15.031s][warning][gc,alloc] Executor task launch worker for task 1.0 in stage 11.0 (TID 23): Retried waiting for GCLocker too often allocating 15284 words
+[15.031s][warning][gc,alloc] Executor task launch worker for task 8.0 in stage 11.0 (TID 30): Retried waiting for GCLocker too often allocating 11555 words
+[15.032s][warning][gc,alloc] refresh progress: Retried waiting for GCLocker too often allocating 331 words
+[15.342s][warning][gc,alloc] Executor task launch worker for task 3.0 in stage 11.0 (TID 25): Retried waiting for GCLocker too often allocating 17984 words
+[15.342s][warning][gc,alloc] Executor task launch worker for task 6.0 in stage 11.0 (TID 28): Retried waiting for GCLocker too often allocating 18420 words
+[15.343s][warning][gc,alloc] Executor task launch worker for task 7.0 in stage 11.0 (TID 29): Retried waiting for GCLocker too often allocating 15670 words
+[15.343s][warning][gc,alloc] Executor task launch worker for task 2.0 in stage 11.0 (TID 24): Retried waiting for GCLocker too often allocating 14733 words
+[15.634s][warning][gc,alloc] Executor task launch worker for task 6.0 in stage 11.0 (TID 28): Retried waiting for GCLocker too often allocating 12404 words
+[15.634s][warning][gc,alloc] refresh progress: Retried waiting for GCLocker too often allocating 330 words
+[15.634s][warning][gc,alloc] Executor task launch worker for task 7.0 in stage 11.0 (TID 29): Retried waiting for GCLocker too often allocating 19640 words
+[15.634s][warning][gc,alloc] Executor task launch worker for task 4.0 in stage 11.0 (TID 26): Retried waiting for GCLocker too often allocating 10983 words
+[15.634s][warning][gc,alloc] Executor task launch worker for task 5.0 in stage 11.0 (TID 27): Retried waiting for GCLocker too often allocating 15525 words
+[15.634s][warning][gc,alloc] Executor task launch worker for task 9.0 in stage 11.0 (TID 31): Retried waiting for GCLocker too often allocating 13204 words
+[15.899s][warning][gc,alloc] Executor task launch worker for task 4.0 in stage 11.0 (TID 26): Retried waiting for GCLocker too often allocating 14380 words
+[15.899s][warning][gc,alloc] Executor task launch worker for task 6.0 in stage 11.0 (TID 28): Retried waiting for GCLocker too often allocating 11597 words
+[15.899s][warning][gc,alloc] Executor task launch worker for task 7.0 in stage 11.0 (TID 29): Retried waiting for GCLocker too often allocating 13751 words
+[15.899s][warning][gc,alloc] Executor task launch worker for task 9.0 in stage 11.0 (TID 31): Retried waiting for GCLocker too often allocating 14966 words
+[15.899s][warning][gc,alloc] Executor task launch worker for task 8.0 in stage 11.0 (TID 30): Retried waiting for GCLocker too often allocating 16823 words
+[15.899s][warning][gc,alloc] Executor task launch worker for task 0.0 in stage 11.0 (TID 22): Retried waiting for GCLocker too often allocating 24685 words
+[15.899s][warning][gc,alloc] Executor task launch worker for task 5.0 in stage 11.0 (TID 27): Retried waiting for GCLocker too often allocating 17494 words
+[15.903s][warning][gc,alloc] Executor task launch worker for task 1.0 in stage 11.0 (TID 23): Retried waiting for GCLocker too often allocating 11953 words
+[15.906s][warning][gc,alloc] Executor task launch worker for task 1.0 in stage 11.0 (TID 23): Retried waiting for GCLocker too often allocating 47 words
+[15.906s][warning][gc,alloc] Executor task launch worker for task 9.0 in stage 11.0 (TID 31): Retried waiting for GCLocker too often allocating 14966 words
+[15.906s][warning][gc,alloc] Executor task launch worker for task 0.0 in stage 11.0 (TID 22): Retried waiting for GCLocker too often allocating 24684 words
+[15.906s][warning][gc,alloc] Executor task launch worker for task 5.0 in stage 11.0 (TID 27): Retried waiting for GCLocker too often allocating 17494 words
+[15.906s][warning][gc,alloc] Executor task launch worker for task 4.0 in stage 11.0 (TID 26): Retried waiting for GCLocker too often allocating 14380 words
+[15.906s][warning][gc,alloc] Executor task launch worker for task 7.0 in stage 11.0 (TID 29): Retried waiting for GCLocker too often allocating 13751 words
+[15.906s][warning][gc,alloc] Executor task launch worker for task 6.0 in stage 11.0 (TID 28): Retried waiting for GCLocker too often allocating 11612 words
+[15.911s][warning][gc,alloc] Executor task launch worker for task 6.0 in stage 11.0 (TID 28): Retried waiting for GCLocker too often allocating 11843 words
+25/09/21 15:48:04 ERROR Executor: Exception in task 1.0 in stage 11.0 (TID 23)
+java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+25/09/21 15:48:04 ERROR SparkUncaughtExceptionHandler: Uncaught exception in thread Thread[Executor task launch worker for task 1.0 in stage 11.0 (TID 23),5,main]
+java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+25/09/21 15:48:04 ERROR TaskSetManager: Task 1 in stage 11.0 failed 1 times; aborting job
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 2.0 in stage 11.0 (TID 24) (10.105.124.77 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:)
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 9.0 in stage 11.0 (TID 31) (10.105.124.77 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:)
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 5.0 in stage 11.0 (TID 27) (10.105.124.77 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:)
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 3.0 in stage 11.0 (TID 25) (10.105.124.77 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:)
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 6.0 in stage 11.0 (TID 28) (10.105.124.77 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:)
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 7.0 in stage 11.0 (TID 29) (10.105.124.77 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:)
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 4.0 in stage 11.0 (TID 26) (10.105.124.77 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:)
+25/09/21 15:48:04 WARN TaskSetManager: Lost task 8.0 in stage 11.0 (TID 30) (10.105.124.77 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:)
+Traceback (most recent call last):
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/tensortrain.py", line 129, in <module>
+    df = load_and_merge_datasets()
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/tensortrain.py", line 80, in load_and_merge_datasets
+    pandas_df = merged_df.select('text', 'cwe_name').toPandas()
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/pyspark/sql/classic/dataframe.py", line 1792, in toPandas
+    return PandasConversionMixin.toPandas(self)
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/pyspark/sql/pandas/conversion.py", line 197, in toPandas
+    rows = self.collect()
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/pyspark/sql/classic/dataframe.py", line 443, in collect
+    sock_info = self._jdf.collectToPython()
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/py4j/java_gateway.py", line 1362, in __call__
+    return_value = get_return_value(
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/pyspark/errors/exceptions/captured.py", line 282, in deco
+    return f(*a, **kw)
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/py4j/protocol.py", line 327, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling o129.collectToPython.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 11.0 failed 1 times, most recent failure: Lost task 1.0 in stage 11.0 (TID 23) (10.105.124.77 executor driver): java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$3(DAGScheduler.scala:2935)
+	at scala.Option.getOrElse(Option.scala:201)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2935)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2927)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2927)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1295)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1295)
+	at scala.Option.foreach(Option.scala:437)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1295)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3207)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3141)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:3130)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:50)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:1009)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2484)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2505)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2524)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2549)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1057)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:417)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:1056)
+	at org.apache.spark.sql.execution.SparkPlan.executeCollect(SparkPlan.scala:462)
+	at org.apache.spark.sql.execution.adaptive.AdaptiveSparkPlanExec.$anonfun$executeCollect$1(AdaptiveSparkPlanExec.scala:402)
+	at org.apache.spark.sql.execution.adaptive.ResultQueryStageExec.$anonfun$doMaterialize$1(QueryStageExec.scala:325)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$4(SQLExecution.scala:322)
+	at org.apache.spark.sql.execution.SQLExecution$.withSessionTagsApplied(SQLExecution.scala:272)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$3(SQLExecution.scala:320)
+	at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$2(SQLExecution.scala:316)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.apache.spark.sql.catalyst.expressions.UnsafeRow.copy(UnsafeRow.java:490)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage4.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:50)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:402)
+	at org.apache.spark.sql.execution.SparkPlan$$Lambda$3074/0x00007f2170ed1c58.apply(Unknown Source)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:901)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:901)
+	at org.apache.spark.rdd.RDD$$Lambda$3071/0x00007f2170ed1208.apply(Unknown Source)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:374)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:338)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:171)
+	at org.apache.spark.scheduler.Task.run(Task.scala:147)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$5(Executor.scala:647)
+	at org.apache.spark.executor.Executor$TaskRunner$$Lambda$3028/0x00007f2170eb9470.apply(Unknown Source)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:80)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:77)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:99)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:650)
+	... 3 more
+
+INFO:py4j.clientserver:Closing down clientserver connection
+2025-09-21 15:52:04.065539: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/tensortrain.py", line 3, in <module>
+    import tensorflow as tf
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/tensorflow/__init__.py", line 49, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/tensorflow/_api/v2/__internal__/__init__.py", line 11, in <module>
+    from tensorflow._api.v2.__internal__ import distribute
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/tensorflow/_api/v2/__internal__/distribute/__init__.py", line 8, in <module>
+    from tensorflow._api.v2.__internal__.distribute import combinations
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/tensorflow/_api/v2/__internal__/distribute/combinations/__init__.py", line 8, in <module>
+    from tensorflow.python.distribute.combinations import env # line: 456
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/tensorflow/python/distribute/combinations.py", line 36, in <module>
+    from tensorflow.python.distribute import multi_worker_test_base
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/tensorflow/python/distribute/multi_worker_test_base.py", line 33, in <module>
+    from tensorflow.python.distribute import distribute_coordinator as dc
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/tensorflow/python/distribute/distribute_coordinator.py", line 29, in <module>
+    from tensorflow.python.training import monitored_session
+  File "/home/laracroft/projects/python_projects/tensorflow_test/test/env/lib/python3.9/site-packages/tensorflow/python/training/monitored_session.py", line 30, in <module>
+    from tensorflow.python.ops import resources
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 941, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1040, in get_data
+KeyboardInterrupt
