@@ -212,3 +212,5 @@ tokenizer.json
 deep_vuln_model.keras
 dataset
 artifacts
+deep_model.keras
+ml_analyze_out
