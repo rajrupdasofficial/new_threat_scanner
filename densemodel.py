@@ -9,7 +9,6 @@ from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from tensorflow.keras import mixed_precision
 import logging
 import collections
-
 from pyspark.sql import SparkSession
 from pyspark import StorageLevel
 from pyspark.sql.functions import coalesce, lit, concat_ws, col, broadcast
@@ -47,7 +46,6 @@ def configure_gpu():
     else:
         logger.warning("No GPU detected. Falling back to CPU.")
     return gpus
-
 # ---------------------------------------------------------------------
 # Spark data loading + stratified sampling (200k)
 # ---------------------------------------------------------------------
@@ -319,7 +317,6 @@ if __name__ == "__main__":
         .prefetch(AUTOTUNE)
     )
 
-    # Train
     logger.info("Starting training...")
     t_fit = time.time()
     history = model.fit(
