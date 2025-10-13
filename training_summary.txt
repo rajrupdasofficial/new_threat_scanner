@@ -1,0 +1,9 @@
+Training Summary
+============================================================
+Total Samples: 10000
+Number of Classes: 127
+Total Parameters: 37,477,759
+Mixed Precision: Enabled (FP16)
+Batch Size: 64
+Final Test Accuracy: 0.2310
+Final Test Loss: 3.0488
