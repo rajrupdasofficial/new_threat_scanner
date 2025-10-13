@@ -6,6 +6,9 @@
 .metadata_never_index
 .fseventsd/
 boot_out.txt
+base_model_400k.keras
+dense_model.keras
+best_model_400k.keras
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
