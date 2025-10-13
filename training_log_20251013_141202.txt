@@ -1,0 +1,122 @@
+2025-10-13 14:12:02,995 [INFO] ================================================================================
+2025-10-13 14:12:02,995 [INFO] TRAINING SESSION STARTED - DYNAMIC GPU ALLOCATION
+2025-10-13 14:12:02,995 [INFO] ================================================================================
+2025-10-13 14:12:03,146 [INFO] GPU detected: {'compute_capability': (8, 6), 'device_name': 'NVIDIA GeForce RTX 3050 Laptop GPU'}
+2025-10-13 14:12:03,167 [INFO] GPU Total VRAM: 4096MB, Safe Limit: 3481MB
+2025-10-13 14:12:03,167 [INFO] GPU configured: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+2025-10-13 14:12:03,167 [INFO] Mixed Precision Training ENABLED (FP16)
+2025-10-13 14:12:03,167 [INFO] Dynamic memory allocation ENABLED
+2025-10-13 14:12:03,167 [INFO] Step 1: Loading samples...
+2025-10-13 14:12:08,693 [INFO] Renamed '_c0' to 'cve_id' in cve.csv
+2025-10-13 14:12:11,965 [INFO] Dataset size after sampling: 400000 rows
+2025-10-13 14:12:18,753 [INFO] Collected 10000 samples so far...
+2025-10-13 14:12:18,961 [INFO] Final dataset size: 10000 samples
+2025-10-13 14:12:18,961 [INFO] Step 2: Preprocessing with class balancing...
+2025-10-13 14:12:19,472 [INFO] Computed class weights for 127 classes (addressing class imbalance)
+2025-10-13 14:12:19,472 [INFO] Preprocessed 10000 samples with 127 classes
+2025-10-13 14:12:19,472 [INFO] Embedding input dim: 15001, Max length: 350
+2025-10-13 14:12:19,475 [INFO] Step 3: Splitting data...
+2025-10-13 14:12:19,482 [INFO] Train: (8000, 350), Test: (2000, 350)
+2025-10-13 14:12:19,483 [INFO] Step 4: Building regularized model with 127 classes...
+2025-10-13 14:12:20,412 [INFO] Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ embedding (Embedding)                │ (None, 350, 384)            │       5,760,384 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ bidirectional (Bidirectional)        │ (None, 350, 768)            │       2,362,368 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout (Dropout)                    │ (None, 350, 768)            │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization                  │ (None, 350, 768)            │           1,536 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ bidirectional_1 (Bidirectional)      │ (None, 350, 512)            │       2,099,200 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_1 (Dropout)                  │ (None, 350, 512)            │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_1                │ (None, 350, 512)            │           1,024 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ bidirectional_2 (Bidirectional)      │ (None, 350, 256)            │         656,384 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_2 (Dropout)                  │ (None, 350, 256)            │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ bidirectional_3 (Bidirectional)      │ (None, 128)                 │         164,352 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_3 (Dropout)                  │ (None, 128)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 4096)                │         528,384 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_4 (Dropout)                  │ (None, 4096)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_2                │ (None, 4096)                │           8,192 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 3072)                │      12,585,984 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_5 (Dropout)                  │ (None, 3072)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_3                │ (None, 3072)                │           6,144 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_2 (Dense)                      │ (None, 2048)                │       6,293,504 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_6 (Dropout)                  │ (None, 2048)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_4                │ (None, 2048)                │           4,096 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_3 (Dense)                      │ (None, 1024)                │       2,098,176 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_7 (Dropout)                  │ (None, 1024)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_5                │ (None, 1024)                │           2,048 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_4 (Dense)                      │ (None, 512)                 │         524,800 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_8 (Dropout)                  │ (None, 512)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_5 (Dense)                      │ (None, 256)                 │         131,328 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_9 (Dropout)                  │ (None, 256)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_6 (Dense)                      │ (None, 128)                 │          32,896 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_10 (Dropout)                 │ (None, 128)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_7 (Dense)                      │ (None, 64)                  │           8,256 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_11 (Dropout)                 │ (None, 64)                  │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_8 (Dense)                      │ (None, 127)                 │           8,255 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 33,277,311 (126.94 MB)
+ Trainable params: 33,277,311 (126.94 MB)
+ Non-trainable params: 0 (0.00 B)
+
+2025-10-13 14:12:20,413 [INFO] Total parameters: 33,277,311
+2025-10-13 14:12:20,413 [INFO] Step 5: Starting SUPERVISED training with regularization...
+2025-10-13 14:12:20,413 [INFO] Using class weights to handle imbalanced data
+2025-10-13 14:12:20,413 [INFO] Batch size: 64 (optimized for detected GPU)
+2025-10-13 14:12:20,460 [ERROR] UNEXPECTED ERROR:
+Traceback (most recent call last):
+  File "/home/laracroft/projects/python_projects/flaks_projects/wstth_automatic_vulnerability_predictor/vulnerability_trainer/densemodel.py", line 432, in <module>
+    history = model.fit(
+  File "/home/laracroft/.pyenv/versions/3.10.18/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/laracroft/projects/python_projects/flaks_projects/wstth_automatic_vulnerability_predictor/vulnerability_trainer/densemodel.py", line 342, in on_epoch_begin
+    tf.keras.backend.set_value(self.model.optimizer.lr, lr)
+AttributeError: 'LossScaleOptimizer' object has no attribute 'lr'
+2025-10-13 14:12:20,460 [ERROR] 
+Traceback:
+Traceback (most recent call last):
+  File "/home/laracroft/projects/python_projects/flaks_projects/wstth_automatic_vulnerability_predictor/vulnerability_trainer/densemodel.py", line 432, in <module>
+    history = model.fit(
+  File "/home/laracroft/.pyenv/versions/3.10.18/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/laracroft/projects/python_projects/flaks_projects/wstth_automatic_vulnerability_predictor/vulnerability_trainer/densemodel.py", line 342, in on_epoch_begin
+    tf.keras.backend.set_value(self.model.optimizer.lr, lr)
+AttributeError: 'LossScaleOptimizer' object has no attribute 'lr'
+

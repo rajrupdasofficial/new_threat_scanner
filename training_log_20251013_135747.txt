@@ -1,0 +1,123 @@
+2025-10-13 13:57:47,317 [INFO] ================================================================================
+2025-10-13 13:57:47,317 [INFO] TRAINING SESSION - PERFORMANCE OPTIMIZED
+2025-10-13 13:57:47,317 [INFO] ================================================================================
+2025-10-13 13:57:47,470 [INFO] GPU configured: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+2025-10-13 13:57:47,470 [INFO] Mixed Precision Training ENABLED (FP16)
+2025-10-13 13:57:47,470 [INFO] Step 1: Loading 400K samples...
+2025-10-13 13:57:52,842 [INFO] Renamed '_c0' to 'cve_id' in cve.csv
+2025-10-13 13:57:56,064 [INFO] Dataset size after sampling: 400000 rows
+2025-10-13 13:57:56,150 [INFO] Collecting data using toLocalIterator...
+2025-10-13 13:58:00,443 [INFO] Collected 50000 samples so far...
+2025-10-13 13:58:00,705 [INFO] Collected 100000 samples so far...
+2025-10-13 13:58:00,848 [INFO] Collected 150000 samples so far...
+2025-10-13 13:58:01,100 [INFO] Collected 200000 samples so far...
+2025-10-13 13:58:01,251 [INFO] Collected 250000 samples so far...
+2025-10-13 13:58:01,507 [INFO] Collected 300000 samples so far...
+2025-10-13 13:58:01,652 [INFO] Collected 350000 samples so far...
+2025-10-13 13:58:01,908 [INFO] Collected 400000 samples so far...
+2025-10-13 13:58:02,284 [INFO] Final dataset size: 400000 samples
+2025-10-13 13:58:02,284 [INFO] Step 2: Preprocessing...
+2025-10-13 13:58:21,029 [INFO] Preprocessed 400000 samples with 158 classes
+2025-10-13 13:58:21,030 [INFO] Embedding input dim: 15001, Max length: 300
+2025-10-13 13:58:21,031 [INFO] Class distribution - Min: 1, Max: 97255, Avg: 2532
+2025-10-13 13:58:21,105 [INFO] Step 3: Splitting data...
+2025-10-13 13:58:21,338 [INFO] Train: (320000, 300), Test: (80000, 300)
+2025-10-13 13:58:21,338 [INFO] Step 4: Building FAST model with 158 classes...
+2025-10-13 13:58:22,206 [INFO] Model: "sequential"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ embedding (Embedding)                │ (None, 300, 320)            │       4,800,320 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ bidirectional (Bidirectional)        │ (None, 300, 640)            │       1,640,960 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout (Dropout)                    │ (None, 300, 640)            │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization                  │ (None, 300, 640)            │           1,280 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ bidirectional_1 (Bidirectional)      │ (None, 300, 512)            │       1,837,056 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_1 (Dropout)                  │ (None, 300, 512)            │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_1                │ (None, 300, 512)            │           1,024 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ bidirectional_2 (Bidirectional)      │ (None, 300, 256)            │         656,384 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_2 (Dropout)                  │ (None, 300, 256)            │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ bidirectional_3 (Bidirectional)      │ (None, 128)                 │         164,352 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_3 (Dropout)                  │ (None, 128)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 3072)                │         396,288 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_4 (Dropout)                  │ (None, 3072)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_2                │ (None, 3072)                │           6,144 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_1 (Dense)                      │ (None, 2048)                │       6,293,504 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_5 (Dropout)                  │ (None, 2048)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_3                │ (None, 2048)                │           4,096 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_2 (Dense)                      │ (None, 2048)                │       4,196,352 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_6 (Dropout)                  │ (None, 2048)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ layer_normalization_4                │ (None, 2048)                │           4,096 │
+│ (LayerNormalization)                 │                             │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_3 (Dense)                      │ (None, 1024)                │       2,098,176 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_7 (Dropout)                  │ (None, 1024)                │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_4 (Dense)                      │ (None, 512)                 │         524,800 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_8 (Dropout)                  │ (None, 512)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_5 (Dense)                      │ (None, 256)                 │         131,328 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_9 (Dropout)                  │ (None, 256)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_6 (Dense)                      │ (None, 128)                 │          32,896 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dropout_10 (Dropout)                 │ (None, 128)                 │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense_7 (Dense)                      │ (None, 158)                 │          20,382 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 22,809,438 (87.01 MB)
+ Trainable params: 22,809,438 (87.01 MB)
+ Non-trainable params: 0 (0.00 B)
+
+2025-10-13 13:58:22,206 [INFO] Total parameters: 22,809,438
+2025-10-13 13:58:22,206 [INFO] Step 5: Starting FAST training...
+2025-10-13 13:58:22,206 [INFO] Training samples: 320000, Steps per epoch: 5000
+2025-10-13 13:59:03,829 [ERROR] ERROR:
+Traceback (most recent call last):
+  File "/home/laracroft/projects/python_projects/flaks_projects/wstth_automatic_vulnerability_predictor/vulnerability_trainer/densemodel.py", line 308, in <module>
+    history = model.fit(
+  File "/home/laracroft/.pyenv/versions/3.10.18/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/laracroft/.pyenv/versions/3.10.18/lib/python3.10/site-packages/pyspark/core/context.py", line 389, in signal_handler
+    self.cancelAllJobs()
+  File "/home/laracroft/.pyenv/versions/3.10.18/lib/python3.10/site-packages/pyspark/core/context.py", line 2487, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+AttributeError: 'NoneType' object has no attribute 'sc'
+2025-10-13 13:59:03,832 [ERROR] 
+Traceback:
+Traceback (most recent call last):
+  File "/home/laracroft/projects/python_projects/flaks_projects/wstth_automatic_vulnerability_predictor/vulnerability_trainer/densemodel.py", line 308, in <module>
+    history = model.fit(
+  File "/home/laracroft/.pyenv/versions/3.10.18/lib/python3.10/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/laracroft/.pyenv/versions/3.10.18/lib/python3.10/site-packages/pyspark/core/context.py", line 389, in signal_handler
+    self.cancelAllJobs()
+  File "/home/laracroft/.pyenv/versions/3.10.18/lib/python3.10/site-packages/pyspark/core/context.py", line 2487, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+AttributeError: 'NoneType' object has no attribute 'sc'
+

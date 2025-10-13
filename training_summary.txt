@@ -2,8 +2,11 @@ Training Summary
 ============================================================
 Total Samples: 10000
 Number of Classes: 127
-Total Parameters: 37,477,759
+Total Parameters: 33,277,311
 Mixed Precision: Enabled (FP16)
 Batch Size: 64
-Final Test Accuracy: 0.2310
-Final Test Loss: 3.0488
+Class Weighting: Enabled
+L2 Regularization: Enabled
+Warm-up Learning Rate: Enabled
+Final Test Accuracy: 0.0115
+Final Test Loss: 6.4232
